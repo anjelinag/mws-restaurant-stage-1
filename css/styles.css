@@ -1,9 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
-
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font: 16px;
 	color: #333;
 	line-height: 1.5;
 }
@@ -134,8 +138,11 @@ nav h1 a {
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  padding: 30px 15px 60px;
+  padding: 20px 15px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 #restaurants-list li {
   background-color: #fff;
