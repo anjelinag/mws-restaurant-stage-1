@@ -16,7 +16,7 @@
   <header role="banner">
     <!-- Beginning nav -->
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1><a href="/"tabindex="0">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
     <ul id="breadcrumb" role="navigation" aria-lable="breadcrumb">
@@ -28,7 +28,7 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main id="maincontent" role="main">
+  <main id="maincontent" tabindex="0" role="main">
     <!-- Beginning map -->
     <section id="map-container" role="application" tabindex="-1" aria-hidden="true" aria-lable="Google Map">
       <div id="map"></div>
@@ -36,27 +36,27 @@
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
-      <div id="restaurant-img-container"> 
+      <h1 id="restaurant-name" tabindex="0"></h1>
+      <div id="restaurant-img-container" tabindex="0"> 
         <img id="restaurant-img">
       </div>
-      <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
+      <p id="restaurant-cuisine" tabindex="0"></p>
+      <p id="restaurant-address" tabindex="0"></p>
+      <table id="restaurant-hours" tabindex="0"></table>
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
-    <section id="reviews-container" aria-label="Reviews">
-      <div id ="reviews-header"></div>
-      <ul id="reviews-list"></ul>
+    <section id="reviews-container" tabindex="0" aria-label="Reviews">
+      <div id ="reviews-header" tabindex="0"></div>
+      <ul id="reviews-list" tabindex="0"></ul>
     </section>
     <!-- End reviews -->
   </main>
   <!-- End main -->
 
   <!-- Beginning footer -->
-  <footer id="footer" role="Content Info">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+  <footer id="footer" tabindex="0" role="Content Info">
+    Copyright (c) 2017 <a href="/" tabindex="0"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
   <!-- End footer -->
   <script type="text/javascript" src="js/dbhelper.js"></script>
