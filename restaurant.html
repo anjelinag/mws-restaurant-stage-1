@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Normalize.css for better cross-browser consistency -->
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <!-- Main CSS file -->
@@ -13,6 +13,7 @@
 </head>
 
 <body class="inside">
+    <a href="#skip-to" class="skip-link">Skip to content</a>
   <!-- Beginning header -->
   <header role="banner">
     <!-- Beginning nav -->
@@ -31,21 +32,24 @@
   <!-- Beginning main -->
   <main id="maincontent" role="main">
     <!-- Beginning map -->
-    <section id="map-container" role="application" aria-lable="Map">
+    <section id="map-container" role="application" tabindex="-1" aria-hidden="true" aria-lable="Google Map">
       <div id="map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
       <h1 id="restaurant-name"></h1>
-      <img id="restaurant-img">
+      <div id="restaurant-img-container"> 
+        <img id="restaurant-img">
+      </div>
       <p id="restaurant-cuisine"></p>
       <p id="restaurant-address"></p>
       <table id="restaurant-hours"></table>
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
-    <section id="reviews-container">
+    <section id="reviews-container" aria-label="Reviews">
+      <div id ="reviews-header"></div>
       <ul id="reviews-list"></ul>
     </section>
     <!-- End reviews -->
