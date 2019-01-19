@@ -15,9 +15,8 @@ self.addEventListener('install', function(event) {
 			])
 			.catch(error =>{
 				console.log('Caches open failed: ' + error)
-
+			});
 		});
-	});
 });
 self.addEventListener('activate', function(event) {
   event.waitUntil(
