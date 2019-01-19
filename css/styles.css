@@ -174,7 +174,7 @@ nav h1 a {
   font-family: Arial,sans-serif;
   margin: 15px;
   min-height: 380px;
-  padding: 0 0 30px;
+  padding: 4px 4px 30px;
   text-align: left;
   width: 300px;
   display: flex;
@@ -190,7 +190,7 @@ nav h1 a {
   max-width: 100%;
   min-width: 100%;
   /* border-bottom: 1px solid #999; */
-  padding: 6px;
+  padding: 0;
 }
 #restaurants-list .restaurant-info {
   margin: 0 22px;
